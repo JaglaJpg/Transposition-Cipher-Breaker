@@ -146,9 +146,9 @@ class GeneticAlgorithm(Cipher):
     return pop[-1]
 
 
-poopoo = "abcdefghijk"
-tc = Cipher(poopoo)
+key = "abcdefghijk"
+tc = Cipher(key)
 target = tc.Encrypt("I cant just think of anything dude")
-poop = input(f"The encrypted msg is {target}, would you like to continue? ")
+ask = input(f"The encrypted msg is {target}, would you like to continue? ")
 ga = GeneticAlgorithm(12, target)
 print(f"The target is '{target}'\n The message is '{tc.Decrypt(target ,ga.Run(len(poopoo)))}'")
